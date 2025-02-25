@@ -9,11 +9,11 @@ document.getElementById("login-btn")
         
         if (accountNumber.length === 11) {
             if (convertedPin === 1234) {
-                console.log("ok");
+                window.location.href = "../main.html"
             } else {
-                console.log("Invalid pin")
+                alert("Invalid pin")
             }
         } else {
-            console.log("Invalid account number")
+            alert("Invalid account number")
         }
     })
